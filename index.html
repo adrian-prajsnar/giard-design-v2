@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Uwolnij potencjał swojego ogrodu dzięki kreatywnemu projektowaniu nowoczesnych ogrodów. Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompletną obsługę inwestycji terenów zielonych."
+    />
+    <meta name="theme-color" content="#1B5B31" />
+    <title>GiardDesign — Twój nowoczesny ogród</title>
+    <link rel="icon" href="public/favicon/favicon-32x32.png" type="image/png" />
+    <link rel="apple-touch-icon" href="public/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="public/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("is-loading");
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Przejdź do treści</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <div class="loader" aria-hidden="true">
+      <div class="loader-inner">
+        <span class="wordmark">giarddesign</span>
+        <span class="loader-line"></span>
+      </div>
+    </div>
+
+    <header class="header">
+      <a class="logo" href="#top" aria-label="GiardDesign, strona główna">
+        <span class="wordmark">giarddesign</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Główne">
+        <ul class="nav-links">
+          <li class="has-sub">
+            <a href="#oferta">Oferta</a>
+            <div class="nav-pop">
+              <p>Działamy kompleksowo</p>
+              <a href="#projekty"><span>01</span><strong>Projekty</strong><small>Nowoczesny ogród na istniejącej przestrzeni</small></a>
+              <a href="#wizualizacje"><span>02</span><strong>Wizualizacje</strong><small>Wirtualny spacer w technologii 3D</small></a>
+              <a href="#realizacje"><span>03</span><strong>Realizacje</strong><small>Od koncepcji po wykonanie</small></a>
+            </div>
+          </li>
+          <li><a href="#o-firmie">O firmie</a></li>
+          <li><a href="#realizacje">Realizacje</a></li>
+        </ul>
+        <a class="btn btn-fill nav-cta" href="#kontakt">Kontakt</a>
+      </nav>
+
+      <div class="header-tools">
+        <button class="icon-btn" id="search-open" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Szukaj">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="M16 16l5 5"></path></svg>
+        </button>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="search-backdrop" id="search-backdrop" hidden></div>
+    <div class="search-panel" id="search-panel" hidden role="dialog" aria-label="Wyszukiwarka">
+      <form class="search-form" role="search">
+        <div class="search-field">
+          <span class="search-field-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="M16 16l5 5"></path></svg>
+          </span>
+          <label class="sr-only" for="search-input">Szukaj na stronie</label>
+          <input id="search-input" type="search" maxlength="40" placeholder="Szukaj oferty, realizacji, kontaktu…" autocomplete="off" enterkeyhint="search" />
+          <button class="search-close" id="search-close" type="button" aria-label="Zamknij wyszukiwanie">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+          </button>
+        </div>
+      </form>
+      <div class="search-panel-body">
+        <p class="search-msg" role="status"></p>
+        <ul class="search-results"></ul>
+        <p class="search-kbd-hint"><kbd>Esc</kbd> zamknij · <kbd>/</kbd> otwórz</p>
+      </div>
+    </div>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="Wprowadzenie">
+        <div class="hero-slide is-active">
+          <img src="public/assets/images/slider-images/slider-1.jpg" alt="Zdjęcie pięknie zaprojektowanego ogrodu" fetchpriority="high" />
+        </div>
+        <div class="hero-slide">
+          <img data-src="public/assets/images/slider-images/slider-2.jpg" alt="Zdjęcie pięknie zaprojektowanego ogrodu" />
+        </div>
+        <div class="hero-slide">
+          <img data-src="public/assets/images/slider-images/slider-3.jpg" alt="Zdjęcie pięknie zaprojektowanego ogrodu" />
+        </div>
+        <div class="hero-slide">
+          <img data-src="public/assets/images/slider-images/slider-4.jpg" alt="Zdjęcie pięknie zaprojektowanego ogrodu" />
+        </div>
+        <div class="hero-slide">
+          <img data-src="public/assets/images/slider-images/slider-5.jpg" alt="Zdjęcie pięknie zaprojektowanego ogrodu" />
+        </div>
+        <div class="hero-slide">
+          <img data-src="public/assets/images/slider-images/slider-6.jpg" alt="Zdjęcie pięknie zaprojektowanego ogrodu" />
+        </div>
+        <div class="hero-slide">
+          <img data-src="public/assets/images/slider-images/slider-7.jpg" alt="Zdjęcie pięknie zaprojektowanego ogrodu" />
+        </div>
+        <div class="hero-slide">
+          <img data-src="public/assets/images/slider-images/slider-8.jpg" alt="Zdjęcie pięknie zaprojektowanego ogrodu" />
+        </div>
+        <div class="hero-slide">
+          <img data-src="public/assets/images/slider-images/slider-9.jpg" alt="Zdjęcie pięknie zaprojektowanego ogrodu" />
+        </div>
+        <div class="hero-shade"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">GiardDesign</p>
+          <h1>
+            <span class="line"><span>Nowoczesna aranżacja</span></span>
+            <span class="line"><span>Twojego <em>ogrodu</em></span></span>
+          </h1>
+          <p class="hero-lead">
+            Marka GiardDesign to wieloletnie doświadczenie i&nbsp;wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z&nbsp;indywidualnym podejściem do każdego projektu.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="#kontakt">Skontaktuj się z nami</a>
+            <a class="btn btn-line" href="#realizacje">
+              Zobacz nasze realizacje
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-controls">
+          <button class="icon-btn hero-prev" type="button" aria-label="Poprzednie zdjęcie">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg>
+          </button>
+          <div class="hero-meter" aria-hidden="true">
+            <span class="hero-index">01</span>
+            <div class="hero-bar"><span></span></div>
+            <span>09</span>
+          </div>
+          <button class="icon-btn hero-next" type="button" aria-label="Następne zdjęcie">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+          </button>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><i></i> Przewiń</div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span>Projekty</span><i></i><span>Wizualizacje</span><i></i><span>Realizacje</span><i></i><span>Ogrody przydomowe</span><i></i><span>Ogrody rezydencjonalne</span><i></i><span>Tereny zielone</span><i></i>
+          </div>
+          <div class="marquee-group">
+            <span>Projekty</span><i></i><span>Wizualizacje</span><i></i><span>Realizacje</span><i></i><span>Ogrody przydomowe</span><i></i><span>Ogrody rezydencjonalne</span><i></i><span>Tereny zielone</span><i></i>
+          </div>
+          <div class="marquee-group">
+            <span>Projekty</span><i></i><span>Wizualizacje</span><i></i><span>Realizacje</span><i></i><span>Ogrody przydomowe</span><i></i><span>Ogrody rezydencjonalne</span><i></i><span>Tereny zielone</span><i></i>
+          </div>
+        </div>
+      </div>
+
+      <section class="section offer" id="oferta">
+        <div class="wrap">
+          <div class="offer-head">
+            <div class="reveal">
+              <span class="kicker">Oferta</span>
+              <h2>Działamy <em>kompleksowo</em></h2>
+            </div>
+            <p class="lede reveal" style="--d: 0.12s">
+              Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i&nbsp;wcielimy w&nbsp;życie, a&nbsp;na każdym etapie posłużymy radą i&nbsp;wieloletnim doświadczeniem.
+            </p>
+          </div>
+        </div>
+
+        <div class="wrap-wide offer-list">
+          <article class="offer-card is-active reveal" id="projekty" style="--d: 0.05s">
+            <img class="offer-card-bg" src="public/assets/images/gallery-images/gallery-1.jpg" alt="" />
+            <div class="offer-card-top">
+              <em>01</em>
+              <div class="offer-icon"><img src="public/assets/icons/icon-projects.png" alt="" /></div>
+            </div>
+            <div class="offer-card-body">
+              <h3>Projekty</h3>
+              <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i&nbsp;z&nbsp;najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+              <a class="card-link" href="#kontakt">Dowiedz się więcej</a>
+            </div>
+          </article>
+
+          <article class="offer-card reveal" id="wizualizacje" style="--d: 0.15s">
+            <img class="offer-card-bg" src="public/assets/images/gallery-images/gallery-8.jpg" alt="" />
+            <div class="offer-card-top">
+              <em>02</em>
+              <div class="offer-icon"><img src="public/assets/icons/icon-visualizations.png" alt="" /></div>
+            </div>
+            <div class="offer-card-body">
+              <h3>Wizualizacje</h3>
+              <p>Przedstawimy Ci projekty koncepcyjne w&nbsp;postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+              <a class="card-link" href="#kontakt">Dowiedz się więcej</a>
+            </div>
+          </article>
+
+          <article class="offer-card reveal" style="--d: 0.25s">
+            <img class="offer-card-bg" src="public/assets/images/gallery-images/gallery-5.jpg" alt="" />
+            <div class="offer-card-top">
+              <em>03</em>
+              <div class="offer-icon"><img src="public/assets/icons/icon-realisations.png" alt="" /></div>
+            </div>
+            <div class="offer-card-body">
+              <h3>Realizacje</h3>
+              <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i&nbsp;zaawansowanych technologii.</p>
+              <a class="card-link" href="#realizacje">Zobacz nasze realizacje</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about" id="o-firmie">
+        <div class="about-layout">
+          <figure class="about-photo">
+            <img src="public/assets/images/section-about-img.jpg" alt="Widok profesjonalnie zaprojektowanego ogrodu" />
+          </figure>
+          <div class="about-panel">
+            <span class="kicker">O firmie</span>
+            <h2>Tworzymy z&nbsp;<em>pasją</em></h2>
+            <p>
+              Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i&nbsp;realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i&nbsp;elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
+            </p>
+            <ul class="about-points">
+              <li><span>01</span><strong>Projektanci i&nbsp;architekci</strong><small>Rozpoznanie i realizacja potrzeb klienta</small></li>
+              <li><span>02</span><strong>Minimalizm i&nbsp;geometria</strong><small>Elegancka prostota nowoczesnych przestrzeni</small></li>
+              <li><span>03</span><strong>Ogrody małoobsługowe</strong><small>Dopasowane do współczesnego trybu życia</small></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section realisations" id="realizacje">
+        <div class="wrap section-head">
+          <div class="reveal">
+            <span class="kicker">Realizacje</span>
+            <h2>Nasze <em>projekty</em></h2>
+          </div>
+          <p class="gallery-count">12 z 24</p>
+        </div>
+        <div class="wrap-wide gallery-wrap">
+          <div class="gallery" id="gallery"></div>
+          <div class="gallery-more">
+            <button class="btn btn-line" id="expand-gallery" type="button" aria-expanded="false" aria-controls="gallery">
+              <span>Rozwiń</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="instagram" id="instagram">
+        <img class="shot shot-1" src="public/assets/images/gallery-images/gallery-2.jpg" alt="" />
+        <img class="shot shot-2" src="public/assets/images/gallery-images/gallery-11.jpg" alt="" />
+        <img class="shot shot-3" src="public/assets/images/gallery-images/gallery-7.jpg" alt="" />
+        <img class="shot shot-4" src="public/assets/images/gallery-images/gallery-3.jpg" alt="" />
+        <div class="instagram-strip" aria-hidden="true">
+          <img src="public/assets/images/gallery-images/gallery-2.jpg" alt="" />
+          <img src="public/assets/images/gallery-images/gallery-11.jpg" alt="" />
+          <img src="public/assets/images/gallery-images/gallery-7.jpg" alt="" />
+          <img src="public/assets/images/gallery-images/gallery-3.jpg" alt="" />
+        </div>
+        <div class="instagram-copy">
+          <h2 class="reveal">Zostańmy w&nbsp;kontakcie!<br />Znajdziesz nas na <em>Instagramie</em>.</h2>
+          <p class="lede reveal" style="--d: 0.1s">Śledź nasze najnowsze realizacje!</p>
+          <a class="btn btn-light reveal" style="--d: 0.18s" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </section>
+
+      <section class="section contact" id="kontakt">
+        <div class="wrap contact-grid">
+          <div>
+            <span class="kicker reveal">Kontakt</span>
+            <h2 class="reveal" style="--d: 0.08s">Daj znać, co możemy dla Ciebie zrobić</h2>
+            <p class="lede reveal" style="--d: 0.14s">Opowiedz o ogrodzie, który chcesz stworzyć. Odpowiemy z propozycją dalszych kroków.</p>
+            <div class="contact-points reveal" style="--d: 0.2s">
+              <a href="tel:+48000000000">000-000-000</a>
+              <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
+            </div>
+          </div>
+
+          <form class="contact-card reveal" id="contact-form" style="--d: 0.12s" novalidate>
+            <div class="field">
+              <label for="contact-name">Imię</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Anna Kowalska" required />
+              <p class="field-error" data-for="name"></p>
+            </div>
+            <div class="field">
+              <label for="contact-email">E-mail</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="anna@email.com" required />
+              <p class="field-error" data-for="email"></p>
+            </div>
+            <div class="field">
+              <label for="contact-message">Wiadomość</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Opisz ogród, działkę albo etap, na którym jesteś." required></textarea>
+              <p class="field-error" data-for="message"></p>
+            </div>
+            <button class="btn btn-fill" type="submit">Skontaktuj się z nami</button>
+            <p class="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-top">
+        <div class="footer-brand">
+          <span class="wordmark">giarddesign</span>
+          <p>Daj znać, co możemy dla Ciebie zrobić. Zaprojektujemy, zwizualizujemy i&nbsp;zrealizujemy ogród.</p>
+          <a class="btn btn-fill" href="mailto:giarddesign@kontakt.pl">Skontaktuj się z nami</a>
+        </div>
+        <div>
+          <p class="footer-label">Nawigacja</p>
+          <ul class="footer-links">
+            <li><a href="#oferta">Oferta</a></li>
+            <li><a href="#o-firmie">O firmie</a></li>
+            <li><a href="#realizacje">Realizacje</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-label">Kontakt</p>
+          <ul class="footer-links">
+            <li><a href="tel:+48000000000">000-000-000</a></li>
+            <li><a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrap footer-base">
+        <p>Prawa zastrzeżone © <span id="year">2026</span></p>
+        <p class="made">
+          <span class="made-chip">
+            <span class="made-part">
+              <span class="made-kicker">Inspired by</span>
+              <img
+                class="made-logo"
+                src="public/assets/images/logo-adrespect.png"
+                alt="adRespect"
+                width="108"
+                height="27"
+                decoding="async"
+              />
+            </span>
+            <span class="made-rule" aria-hidden="true"></span>
+            <span class="made-part">
+              <span class="made-kicker">Made by</span>
+              <span class="made-studio">Adrian Prajsnar DEV</span>
+            </span>
+          </span>
+        </p>
+      </div>
+    </footer>
+
+    <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Podgląd realizacji">
+      <button class="icon-btn lightbox-close" type="button" aria-label="Zamknij">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+      </button>
+      <button class="icon-btn lightbox-nav prev" type="button" aria-label="Poprzednie zdjęcie">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg>
+      </button>
+      <figure>
+        <img src="" alt="" />
+        <figcaption>01 / 12</figcaption>
+      </figure>
+      <button class="icon-btn lightbox-nav next" type="button" aria-label="Następne zdjęcie">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+      </button>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
